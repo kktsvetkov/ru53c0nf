@@ -39,8 +39,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 }
 @font-face{
     font-family:'FontAwesome';
-    src:url(/assets/fontawesome-webfont-d6551fc623bbdb22f9b51db033c08b7d.eot?v=4.0.3);
-    src:url(/assets/fontawesome-webfont-d6551fc623bbdb22f9b51db033c08b7d.eot?#iefix&v=4.0.3) format("embedded-opentype"),url(/assets/fontawesome-webfont-2e0fd2c57707155ef59f6d36023378d1.woff?v=4.0.3) format("woff"),url(/assets/fontawesome-webfont-a90fc7d47bd3050bcf71b296cfada6b6.ttf?v=4.0.3) format("truetype"),url(/assets/fontawesome-webfont-da0f53631c7ede3d0c3de6167230d96a.svg?v=4.0.3#fontawesomeregular) format("svg");
+    src:url(./assets/fontawesome/fontawesome-webfont-4.0.3.eot);
+    src:url(./assets/fontawesome/fontawesome-webfont-4.0.3.eot) format("embedded-opentype"),url(./assets/fontawesome/fontawesome-webfont-4.0.3.woff) format("woff"),url(./assets/fontawesome/fontawesome-webfont-4.0.3.ttf) format("truetype"),url(./assets/fontawesome/fontawesome-webfont-4.0.3.svg?#fontawesomeregular) format("svg");
     font-weight:normal;
     font-style:normal
 }
