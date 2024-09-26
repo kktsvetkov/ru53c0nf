@@ -317,7 +317,10 @@ article h1{
     padding-bottom:40px;
     margin-bottom:40px;
     border-bottom:1px solid #969696;
-    position:relative
+    position:relative;
+
+	/* KT was here! */
+    	margin-top: 1em;
 }
 article h1:after{
     content:"";
