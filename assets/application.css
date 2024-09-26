@@ -190,7 +190,7 @@ nav a.focus,nav a:hover{
     color:#000000
 }
 nav div{
-    background:url(/assets/nav_background-cbeaa003c16bd5f9d9b622b351005b77.png) repeat;
+    background:url(./nav_background.png) repeat;
     z-index:2;
     min-width:680px
 }
