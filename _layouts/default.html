@@ -11,7 +11,7 @@
 
     <meta content="index,follow,noydir,noodp" name="robots" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
-    <meta content="© 2024 IT Tour." name="copyright" />
+    <meta content="© {{ site.time | date: '%Y' }} IT Tour." name="copyright" />
     <meta content="RuseConf" property="og:site_name" />
     <meta content="RuseConf" property="og:title" />
     <meta content="website" property="og:type" />
@@ -280,9 +280,9 @@
             <img alt="Creative Commons License" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png" />
           </a>
         </p>
-        <p>&copy; 2014 &ndash; {{ site.time | date: '%y' }} IT Tour</p>
+        <p>&copy; 2014 &ndash; {{ site.time | date: '%Y' }} IT Tour</p>
       </div>
-      <a class="top" title="Scroll to top" href="#top"></a>
+      <a class="top" title="Обратно нагоре" href="#top"></a>
     </footer>
 
     <script src="{{ page.base_uri }}/assets/application.js"></script>
