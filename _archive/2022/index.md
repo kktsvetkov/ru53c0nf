@@ -1,8 +1,6 @@
 ---
 layout: default
 
-category: 2022	# da widim moga li da grupiram lektorite po tozi nachin
-
 conference: RuseConf
 event: 2022
 
