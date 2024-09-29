@@ -1,0 +1,4 @@
+* replace scrollspy with non-jquery-based solution
+* convert nav_background to inline base64
+* replace FA with individual svgs
+* resize logo images on the fly
