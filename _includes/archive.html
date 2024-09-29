@@ -2,9 +2,6 @@
   <h1>Архив</h1>
   <ul>
 	  {% for archived_event in site.archive %}
-	    <h2>{{ staff_member.name }} - {{ staff_member.position }}</h2>
-	    <p>{{ archived_event.content | markdownify }}</p>
-
 	    <li>
 	      <a class="logo" href="https://ruseconf.com/archive/{{ archived_event.event }}">
 		<img src="/system/uploads/event/logo/57/thumb_image.png?1726468839?1726468839"

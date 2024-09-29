@@ -5,7 +5,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>RuseConf {{ page.title }} </title>
+    <title>{{ page.conference }} {{ page.event }} </title>
     <link rel="stylesheet" media="screen" href="//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,300,400italic,400,700italic,700&amp;subset=latin,cyrillic" />
     <link rel="stylesheet" media="screen" href="{{ page.base_uri }}/assets/application.css" />
 
@@ -20,19 +20,7 @@
     <link href="{{ page.base_uri }}/assets/ruseconf/2024/favicon_image.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <meta content="{{ page.base_uri }}/assets/ruseconf/2024/logo.png" property="og:image" />
 
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-33727462-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    {% include google-analytics.html %}
 
   </head>
   <body id="top">
