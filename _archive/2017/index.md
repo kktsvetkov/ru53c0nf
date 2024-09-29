@@ -1,6 +1,9 @@
 ---
+layout: default
+
 conference: RuseConf
 event: 2017
+
 date: 16 Декември 2017
 
 venue_name: Зала Сименс на Русенски университет „Ангел Кънчев“ (зала 2Г.204).
