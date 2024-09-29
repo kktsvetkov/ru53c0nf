@@ -1,7 +1,7 @@
 <article id="archive">
 	<h1>Архив</h1>
 	<ul>
-	{% for archived_event in site.archive %}
+	{% for archived_event in site.archive reversed %}
 		<li>
 			<a class="logo" href="{{ page.base_uri }}/archive/{{ archived_event.event }}">
 				<img src="/system/uploads/event/logo/57/thumb_image.png?1726468839?1726468839"
