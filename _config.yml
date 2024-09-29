@@ -4,6 +4,10 @@ layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
 
+collections:
+  archive:
+    output: true
+
 defaults:
   -
     scope:

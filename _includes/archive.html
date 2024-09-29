@@ -1,6 +1,20 @@
 <article id="archive">
   <h1>Архив</h1>
   <ul>
+	  {% for archived_event in site.archive %}
+	    <h2>{{ staff_member.name }} - {{ staff_member.position }}</h2>
+	    <p>{{ archived_event.content | markdownify }}</p>
+
+	    <li>
+	      <a class="logo" href="https://ruseconf.com/archive/{{ archived_event.event }}">
+		<img src="/system/uploads/event/logo/57/thumb_image.png?1726468839?1726468839"
+			alt="{{ archived_event.conference }} {{ archived_event.event }}" />
+	      </a>
+	      <a href="{{ archived_event.url }}">{{ archived_event.conference }} {{ archived_event.event }}</a>
+	      <p>{{ archived_event.date }}, {{ archived_event.venue_name }}</p>
+	    </li>
+	  {% endfor %}
+
     <li>
       <a class="logo" href="https://ruseconf.com/archive/2024">
 	<img src="/system/uploads/event/logo/57/thumb_image.png?1726468839?1726468839" alt="Thumb image" />
