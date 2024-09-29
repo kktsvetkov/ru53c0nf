@@ -3,3 +3,5 @@
 * replace FA with individual svgs
 * resize logo images on the fly
 * make "#top" reset the scrollspy
+* Index page for all speackers at https://ruseconf.com/speakers/
+* Index page for all archived events at https://ruseconf.com/archive/

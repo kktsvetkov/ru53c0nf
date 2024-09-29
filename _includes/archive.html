@@ -1,38 +1,17 @@
 <article id="archive">
-  <h1>Архив</h1>
-  <ul>
-	  {% for archived_event in site.archive %}
-	    <li>
-	      <a class="logo" href="{{ page.base_uri }}/archive/{{ archived_event.event }}">
-		<img src="/system/uploads/event/logo/57/thumb_image.png?1726468839?1726468839"
-			alt="{{ archived_event.conference }} {{ archived_event.event }}" />
-	      </a>
-	      <a href="{{ page.base_uri }}{{ archived_event.url }}">{{ archived_event.conference }} {{ archived_event.event }}</a>
-	      <p>{{ archived_event.date }}, {{ archived_event.venue_name }}</p>
-	    </li>
-	  {% endfor %}
+	<h1>Архив</h1>
+	<ul>
+	{% for archived_event in site.archive %}
+		<li>
+			<a class="logo" href="{{ page.base_uri }}/archive/{{ archived_event.event }}">
+				<img src="/system/uploads/event/logo/57/thumb_image.png?1726468839?1726468839"
+					alt="{{ archived_event.conference }} {{ archived_event.event }}" />
+			</a>
+		<a href="{{ page.base_uri }}{{ archived_event.url }}">{{ archived_event.conference }} {{ archived_event.event }}</a>
+		<p>{{ archived_event.date }}, {{ archived_event.venue_name }}</p>
+		</li>
+	{% endfor %}
 
-    <li>
-      <a class="logo" href="https://ruseconf.com/archive/2024">
-	<img src="/system/uploads/event/logo/57/thumb_image.png?1726468839?1726468839" alt="Thumb image" />
-      </a>
-      <a href="https://ruseconf.com/archive/2024">RuseConf 2024</a>
-      <p>14 Септември 2024, Зала 2.101 на Русенски университет „Ангел Кънчев“</p>
-    </li>
-    <li>
-      <a class="logo" href="https://ruseconf.com/archive/2023">
-	<img src="/system/uploads/event/logo/48/thumb_image.png?1713892878?1713892878" alt="Thumb image" />
-      </a>
-      <a href="https://ruseconf.com/archive/2023">RuseConf 2023</a>
-      <p>09 Септември 2023, Зала 2.101 на Русенски университет „Ангел Кънчев“</p>
-    </li>
-    <li>
-      <a class="logo" href="https://ruseconf.com/archive/2022">
-	<img src="/system/uploads/event/logo/43/thumb_image.png?1676467223?1676467223" alt="Thumb image" />
-      </a>
-      <a href="https://ruseconf.com/archive/2022">RuseConf 2022</a>
-      <p>24 Септември 2022, Зала 2.101 на Русенски университет „Ангел Кънчев“</p>
-    </li>
     <li>
       <a class="logo" href="https://ruseconf.com/archive/2019">
 	<img src="/system/uploads/event/logo/37/thumb_image.png?1724174210?1724174210" alt="Thumb image" />
