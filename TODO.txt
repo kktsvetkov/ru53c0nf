@@ -2,3 +2,4 @@
 * convert nav_background to inline base64
 * replace FA with individual svgs
 * resize logo images on the fly
+* make "#top" reset the scrollspy

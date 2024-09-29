@@ -1,5 +1,5 @@
 ---
-# https://github.com/it-tour-bg/it-tour/blob/master/app/views/layouts/application.html.slim 
+# https://github.com/it-tour-bg/it-tour/blob/master/app/views/layouts/application.html.slim
 ---
 
 <!DOCTYPE html>
@@ -13,11 +13,10 @@
     <meta content="index,follow,noydir,noodp" name="robots" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
     <meta content="© {{ site.time | date: '%Y' }} IT Tour." name="copyright" />
-    <meta content="RuseConf" property="og:site_name" />
-    <meta content="RuseConf" property="og:title" />
+    <meta content="{{ page.conference }}" property="og:site_name" />
+    <meta content="{{ page.conference }}" property="og:title" />
     <meta content="website" property="og:type" />
-
-    <meta content="https://ruseconf.com/" property="og:url" />
+    <meta content="{{ page.base_uri }}" property="og:url" />
     <link href="{{ page.base_uri }}/assets/ruseconf/2024/favicon_image.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <meta content="{{ page.base_uri }}/assets/ruseconf/2024/logo.png" property="og:image" />
 
