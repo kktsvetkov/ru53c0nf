@@ -13,4 +13,4 @@ venue_map_url:
 venue_notes:
 ---
 
-<!-- 123.456.789-0 -->
+{{ content }}
