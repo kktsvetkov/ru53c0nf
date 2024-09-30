@@ -256,7 +256,11 @@ header img{
     left:50%;
     margin-top:-127px;
     margin-left:-127px;
+}
 
+/* KT was here */
+header img
+{
     height: 250px;
     width: 250px;
 }
