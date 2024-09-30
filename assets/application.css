@@ -309,7 +309,7 @@ footer a.top:hover,footer a.top:focus{
 article{
     padding:90px 0 40px;
     position:relative;
-    margin:0 auto
+    margin:0 auto 1em;
 }
 article h1{
     margin:0 auto;
@@ -322,12 +322,6 @@ article h1{
     margin-bottom:40px;
     border-bottom:1px solid #969696;
     position:relative;
-}
-
-/* KT was here! */
-article h1:first-child
-{
-    	margin-top: 1em;
 }
 
 article h1:after{
