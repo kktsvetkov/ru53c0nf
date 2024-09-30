@@ -265,7 +265,7 @@
 		{% for conference in site.data.conferences %}
 		    <a href="{{ conference.url }}">
 		      {{ conference.name }}
-		    </a>{% unless forloop.last %}, {% endif %}
+		    </a>{% unless forloop.last %}, {% endunless %}
 		{% endfor %}
         </div>
       </section>
