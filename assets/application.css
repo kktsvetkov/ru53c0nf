@@ -318,10 +318,14 @@ article h1{
     margin-bottom:40px;
     border-bottom:1px solid #969696;
     position:relative;
+}
 
-	/* KT was here! */
+/* KT was here! */
+article h1:first-child
+{
     	margin-top: 1em;
 }
+
 article h1:after{
     content:"";
     display:block;
