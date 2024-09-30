@@ -262,12 +262,11 @@
           </div>
         </div>
         <div class="conferences">
-          <a href="https://blagoevgradconf.com">BlagoevgradConf</a>,
-	  <a href="https://plovdivconf.com">PlovdivConf</a>,
-	  <a href="https://tarnovoconf.com">TarnovoConf</a>,
-	  <a href="https://varnaconf.com">VarnaConf</a>,
-	  <a href="https://burgasconf.com">BurgasConf</a>,
-	  <a href="https://ruseconf.com">RuseConf</a>
+		{% for conference in site.data.conferences %}
+		    <a href="{{ conference.url }}">
+		      {{ conference.name }}
+		    </a>{% unless forloop.last %}, {% endif %}
+		{% endfor %}
         </div>
       </section>
     </article>
@@ -277,7 +276,8 @@
       <div class="copyright">
         <p>
           <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
-            <img alt="Creative Commons License" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png" />
+            <img alt="Creative Commons License"
+	    	src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png" />
           </a>
         </p>
         <p>&copy; 2014 &ndash; {{ site.time | date: '%Y' }} IT Tour</p>

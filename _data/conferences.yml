@@ -1,0 +1,17 @@
+- name: BlagoevgradConf
+  url: https://blagoevgradconf.com
+
+- name: PlovdivConf
+  url: https://plovdivconf.com
+
+- name: TarnovoConf
+  url: https://tarnovoconf.com
+
+- name: VarnaConf
+  url: https://varnaconf.com
+
+- name: BurgasConf
+  url: https://burgasconf.com
+
+- name: RuseConf
+  url: https://ruseconf.com
