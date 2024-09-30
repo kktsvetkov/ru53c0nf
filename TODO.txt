@@ -5,3 +5,5 @@
 * make "#top" reset the scrollspy
 * Index page for all speackers at https://ruseconf.com/speakers/
 * Index page for all archived events at https://ruseconf.com/archive/
+* event photos
+* it-tour to have its archive organized per year
