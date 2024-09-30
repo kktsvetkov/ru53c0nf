@@ -27,10 +27,10 @@
     <header>
       <div style="background-image: url({{ page.base_uri }}/assets/ruseconf/2024/cover.png)"></div>
       <a href="/">
-        <img alt="RuseConf" src="{{ page.base_uri }}/assets/ruseconf/2024/main_image.png" />
+        <img alt="{{ page.conference }}" src="{{ page.base_uri }}archive/{{ page.event }}/logo.png" />
       </a>
     </header>
-    <nav style="border-top-color: #284841">
+    <nav style="border-top-color: {{ page.event_color }}">
       <div>
         <span>
           <a href="#when">Кога</a>
