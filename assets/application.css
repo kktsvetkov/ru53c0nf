@@ -1047,6 +1047,14 @@ form input[type="submit"]:active{
     float:left;
     margin-right:20px
 }
+
+/* KT was here */
+#archive ul li a.logo img
+{
+	width: 88px;
+	height: 88px;
+}
+
 #archive ul li .logo,#archive ul li .logo:hover,#archive ul li .logo:active,#archive ul li .logo:focus{
     border-bottom:none
 }
