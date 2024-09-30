@@ -14,4 +14,5 @@
   url: https://burgasconf.com
 
 - name: RuseConf
-  url: https://ruseconf.com
+  # url: https://ruseconf.com
+  url: "https://kktsvetkov.github.io/ru53c0nf/"
