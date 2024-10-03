@@ -9,3 +9,4 @@
 * it-tour to have its archive organized per year
 * move all speaker pages to https://it-tour.bg/
 * remove "Subscribers"
+* add the feedback form url once the event is completed

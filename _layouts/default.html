@@ -33,12 +33,33 @@
     <nav style="border-top-color: {{ page.event_color }}">
       <div>
         <span>
-          <a class="active" href="#when">Кога</a>
-          <a href="#venue">Къде</a>
-          <a href="#schedule">Програма</a>
-          <a href="#sponsors">Спонсори</a>
-          <a href="#speakers">Лектори</a>
-          <a href="#archive">Архив</a>
+
+	  {% if page.dates_announced %}
+	  	<a href="#when">Кога</a>
+	  {% endif %}
+
+	  {% if page.venue_announced %}
+	  	<a href="#venue">Къде</a>
+	  {% endif %}
+
+	  {% if page.sessions_announced %}
+	  	<a href="#schedule">Програма</a>
+	  {% endif %}
+
+	  {% if page.show_sponsor_embed %}
+	  	<a href="#sponsors">Спонсори</a>
+	  {% endif %}
+
+	  {% if page.speakers_announced %}
+	  	<a href="#speakers">Лектори</a>
+	  {% endif %}
+
+	  {% if page.after_party_announced %}
+	  	<a href="#after-party">After party</a>
+	  {% endif %}
+
+	  <a href="#archive">Архив</a>
+
         </span>
       </div>
     </nav>
