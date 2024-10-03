@@ -13,7 +13,16 @@ venue_name: Зала 2.101 на Русенски университет „Ан�
 venue_site_url:
 venue_address:
 venue_map_url:
+venue_map_embedded_url:
 venue_notes:
+
+after_party_announced: 1
+after_party_venue_name: Ресторант "Българче"
+after_party_venue_site_url:
+after_party_venue_address: площад "Възрожденски" 2 (до Пантеона)
+after_party_venue_map_url:
+after_party_venue_map_embedded_url:
+after_party_venue_notes:
 ---
 
 {{ content }}

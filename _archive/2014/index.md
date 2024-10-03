@@ -3,6 +3,7 @@ layout: default
 
 conference: RuseConf
 event: "2014"
+event_color: "#2e3b5e"
 
 dates_announced: 1
 formatted_date: 04 Октомври 2014

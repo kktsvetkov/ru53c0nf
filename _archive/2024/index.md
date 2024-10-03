@@ -1,7 +1,6 @@
 ---
 layout: default
 
-town: Русе
 conference: RuseConf
 event: "2024"
 event_color: "#284841"
