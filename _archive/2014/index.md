@@ -1,7 +1,7 @@
 ---
 layout: default
+permalink: /archive/2014
 
-conference: RuseConf
 event: "2014"
 event_color: "#2e3b5e"
 

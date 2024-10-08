@@ -1,7 +1,7 @@
 ---
 layout: default
+permalink: /archive/2023
 
-conference: RuseConf
 event: "2023"
 event_color: "#CD3744"
 

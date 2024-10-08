@@ -10,4 +10,5 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
+      conference: RuseConf
       base_uri: "https://kktsvetkov.github.io/ru53c0nf/"

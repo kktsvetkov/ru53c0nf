@@ -1,7 +1,7 @@
 ---
 layout: default
+permalink: /archive/2015
 
-conference: RuseConf
 event: "2015"
 
 dates_announced: 1

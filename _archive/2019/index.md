@@ -1,7 +1,7 @@
 ---
 layout: default
+permalink: /archive/2019
 
-conference: RuseConf
 event: "2019"
 
 dates_announced: 1

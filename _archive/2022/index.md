@@ -1,7 +1,7 @@
 ---
 layout: default
+permalink: /archive/2022
 
-conference: RuseConf
 event: "2022"
 
 dates_announced: 1
