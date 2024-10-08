@@ -4,11 +4,11 @@
 	<ul>
 	{% for archived_event in site.archive reversed %}
 		<li>
-			<a class="logo" href="{{ page.base_uri }}archive/{{ archived_event.event }}">
-				<img src="{{ page.base_uri }}archive/{{ archived_event.event }}/logo.png"
+			<a class="logo" href="{{ page.base_uri }}{{ archived_event.permalink }}">
+				<img src="{{ page.base_uri }}{{ archived_event.permalink }}/logo.png"
 					alt="{{ archived_event.conference }} {{ archived_event.event }}" />
 			</a>
-		<a href="{{ page.base_uri }}/{{ archived_event.permalink }}">
+		<a href="{{ page.base_uri }}{{ archived_event.permalink }}">
 			{{ archived_event.conference }} {{ archived_event.event }}</a>
 		<p>{{ archived_event.formatted_date }}, {{ archived_event.venue_name }}</p>
 		</li>

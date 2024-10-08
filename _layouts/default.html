@@ -17,19 +17,21 @@
     <meta content="{{ page.conference }}" property="og:title" />
     <meta content="website" property="og:type" />
     <meta content="{{ page.base_uri }}" property="og:url" />
-    <link href="{{ page.base_uri }}/assets/ruseconf/2024/favicon_image.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <meta content="{{ page.base_uri }}/assets/ruseconf/2024/logo.png" property="og:image" />
+    <link href="{{ page.base_uri }}/archive/{{ page.event }}/logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <meta content="{{ page.base_uri }}/archive/{{ page.event }}/logo.png" property="og:image" />
 
     {% include google-analytics.html %}
 
   </head>
   <body id="top">
+
     <header>
-      <div style="background-image: url({{ page.base_uri }}archive/{{ page.event }}/cover.png)"></div>
+      <div style="background-image: url({{ page.base_uri }}/archive/{{ page.event }}/cover.png)"></div>
       <a href="/">
-        <img alt="{{ page.conference }}" src="{{ page.base_uri }}archive/{{ page.event }}/logo.png" />
+        <img alt="{{ page.conference }}" src="{{ page.base_uri }}/archive/{{ page.event }}/logo.png" />
       </a>
     </header>
+
     <nav style="border-top-color: {{ page.event_color }}">
       <div>
         <span>
@@ -63,8 +65,10 @@
         </span>
       </div>
     </nav>
+
     <article id="when">
       <div class="about">
+        <p>{{ page.event_about }}
         <p>RuseConf е безплатна техническа конференция, част от IT Турнето – пътуващи из България конференции, инициирани от група ентусиасти. Поредното издание на събитието се организира с подкрепата на Русенски университет „Ангел Кънчев“.</p>
       </div>
       <h2>{{ page.formatted_date }}</h2>
@@ -76,6 +80,7 @@
         <a class="facebook" target="_blank" href="https://www.facebook.com/events/1004261434527383/"> cъбитието във facebook</a>
       </section>
     </article>
+
     <article id="venue">
       <h2>Къде?</h2>
       <div class="map">
