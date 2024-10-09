@@ -692,7 +692,9 @@ form input[type="submit"]:active{
 #speakers .avatar img{
     -moz-border-radius:100%;
     -webkit-border-radius:100%;
-    border-radius:100%
+    border-radius:100%;
+    max-width: 80px;
+    max-height: 80px;
 }
 #speakers h3{
     font-size:1.5em;

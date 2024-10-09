@@ -185,103 +185,24 @@
         </section>
       </section>
     </article>
-    <article id="speakers">
-      <h1>Лектори</h1>
 
-	{% for speaker in page.speakers %}
-	<section id="speaker-{{ speaker.id }}">
-          <a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker.id }}">
-            <img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
-          </a>
-          <h3>
-            <a target="_blank" href="https://it-tour.bg/speakers/{{ speaker.id }}">{{ speaker.name }}</a>
-          </h3>
-          <div class="content">
-            <p>{{ speaker.description }}</p>
-          </div>
-        </section>
-	{% endfor %}
+	<article id="speakers">
+	  <h1>Лектори</h1>
+	  {% for speaker in page.speakers %}
+	  <section id="speaker-{{ speaker.id }}">
+	    <a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker.id }}">
+	      <img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
+	    </a>
+	    <h3>
+	      <a target="_blank" href="https://it-tour.bg/speakers/{{ speaker.id }}">{{ speaker.name }}</a>
+	    </h3>
+	    <div class="content">
+	      <p>{{ speaker.description }}</p>
+	    </div>
+	  </section>
+	  {% endfor %}
+	</article>
 
-	<hr delete="me later" />
-
-      <section id="speaker-185">
-        <a target="_blank" class="avatar" href="/speakers/185">
-          <img src="/system/uploads/speaker/photo/185/thumb_image.jpg?1693158984?1693158984" alt="Thumb image" />
-        </a>
-        <h3>
-          <a href="/speakers/185">Благовест Буюклиев</a>
-        </h3>
-        <div class="content">
-          <p>Занимавам се с програмиране на приложения и системи от повече от 20 години и имам широк опит с най-различни технологични стекове и предимно с езици като C, Objective-C, Python и Perl. Топ потребител от Русе в сайта stackoverflow.</p>
-        </div>
-      </section>
-      <section id="speaker-198">
-        <a target="_blank" class="avatar" href="/speakers/198">
-          <img src="/system/uploads/speaker/photo/198/thumb_image.jpg?1724846347?1724846347" alt="Thumb image" />
-        </a>
-        <h3>
-          <a href="/speakers/198">Александра Митева</a>
-        </h3>
-        <div class="content">
-          <p>Завърших МГ &quot;Баба Тонка&quot; и в момента съм студент във втори курс в Русенския университет със специалност Компютърни системи и технологии. Занимавам се с програмиране от 6 години, като през последната година работя като front-end програмист в 1ForFit.</p>
-        </div>
-      </section>
-      <section id="speaker-199">
-        <a target="_blank" class="avatar" href="/speakers/199">
-          <img src="/system/uploads/speaker/photo/199/thumb_image.jpg?1724846590?1724846590" alt="Thumb image" />
-        </a>
-        <h3>
-          <a href="/speakers/199">Калоян Цветков</a>
-        </h3>
-        <div class="content">
-          <p>Калоян Цветков е работил през последните две десетилетия в една от най-добрите компании за електронна търговия – Upshot Commerce (преди Make-A-Store Inc, сега част от Mi9Retail), развивайки следващото поколение платформи за онлайн продажби от най-висок клас. Калоян е лектор, спонсор и организатор на много семинари и събития в град Русе, посветени на информационните технологии и предприемачеството. Той организира първите срещи на ИТ общността в Русе, на които се обсъждат идеи като формирането на сдружение или споделено работно място в града. Калоян е един от основателите на Startup Factory, и е участвал в много от проектите и идеите на сдружението.</p>
-        </div>
-      </section>
-      <section id="speaker-200">
-        <a target="_blank" class="avatar" href="/speakers/200">
-          <img src="/system/uploads/speaker/photo/200/thumb_image.png?1724846686?1724846686" alt="Thumb image" />
-        </a>
-        <h3>
-          <a href="/speakers/200">Стефан Неделчев</a>
-        </h3>
-        <div class="content">
-          <p>Аз съм софтуерен инженер с вече 10г. опит в сферата, като последната половина от това приключение е съсредоточена във Front-end разработка на уеб и мобилни приложения. Силно ме вълнуват новостите в това направление и съм върл пропагандатор на адаптирането на PWA технологии и използването на пълния потенциал на модерните браузъри.</p>
-        </div>
-      </section>
-      <section id="speaker-63">
-        <a target="_blank" class="avatar" href="/speakers/63">
-          <img src="/system/uploads/speaker/photo/63/thumb_image.png?1724943948?1724943948" alt="Thumb image" />
-        </a>
-        <h3>
-          <a href="/speakers/63">Любомир Филипов</a>
-        </h3>
-        <div class="content">
-          <p>Любомир Филипов e IT специалист с опит над 15г. Той е Group Architect и Deputy Program Manager на програма &quot;Polaris&quot;, която е част от международната софтуерна компания Jakala. Разработвал е различни софтуерни решения за агенции от Австралия, Германия, САЩ и Нова Зеландия. Той е лектор на международни конференции и преподавател по дисциплините PHP и Шаблони за софтуерен дизайн към ВТУ „Св. св. Кирил и Методий“. През последните 10 години активно организира турнири, хакатони, конференции, свързани с компютърните науки и е сертифициран възпитаник на Harvard Business School online, като специализира в Leadership and Management.</p>
-        </div>
-      </section>
-      <section id="speaker-201">
-        <a target="_blank" class="avatar" href="/speakers/201">
-          <img src="/system/uploads/speaker/photo/201/thumb_image.png?1726297648?1726297648" alt="Thumb image" />
-        </a>
-        <h3>
-          <a href="/speakers/201">Александър Йорданов</a>
-        </h3>
-        <div class="content">
-          <p>Александър е част от Data Integration Practice към Адастра - глобална IT компания, базирана в Канада с развойни центрове в три континента – Северна Америка, Европа и Азия. Компанията е сред световните лидери в областта на: управление и анализ на данни; тяхната интеграция, трансформация и визуализация; DWH и Data Lake решения, както и консултантски услуги по изграждането и имплементирането на специфични облачни архитектури и решения в AWS, GCP и Azure. </p>
-        </div>
-      </section>
-      <section id="speaker-205">
-        <a target="_blank" class="avatar" href="/speakers/205">
-          <img src="/system/uploads/speaker/photo/205/thumb_image.jpg?1726468798?1726468798" alt="Thumb image" />
-        </a>
-        <h3>
-          <a href="/speakers/205">Йордан Йорданов</a>
-        </h3>
-        <div class="content">
-          <p>Студент КСТ, 3 курс в РУ. Софтуерната разработка му е страст още от 7 клас, а хардуера отпреди това. Обича всичко, свързано с технологиите.</p>
-        </div>
-      </section>
-    </article>
     <article id="subscribe">
       <h1>Записвания</h1>
       <form novalidate="novalidate" class="simple_form new_subscriber" id="new_subscriber" action="/subscribers" accept-charset="UTF-8" method="post">
@@ -294,6 +215,7 @@
         <input type="submit" name="commit" value="Добави" class="btn" />
       </form>
     </article>
+
     {% include archive.html %}
 
     <article id="more">
