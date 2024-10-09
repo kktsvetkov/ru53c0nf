@@ -187,6 +187,23 @@
     </article>
     <article id="speakers">
       <h1>Лектори</h1>
+
+	{% for speaker in page.speakers %}
+	<section id="speaker-{{ speaker.id }}">
+          <a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker.id }}">
+            <img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
+          </a>
+          <h3>
+            <a target="_blank" href="https://it-tour.bg/speakers/{{ speaker.id }}">{{ speaker.name }}</a>
+          </h3>
+          <div class="content">
+            <p>{{ speaker.description }}</p>
+          </div>
+        </section>
+	{% endfor %}
+
+	<hr delete="me later" />
+
       <section id="speaker-185">
         <a target="_blank" class="avatar" href="/speakers/185">
           <img src="/system/uploads/speaker/photo/185/thumb_image.jpg?1693158984?1693158984" alt="Thumb image" />
