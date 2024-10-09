@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /archive/2024
+# permalink: /archive/2024
 
 event: "2024"
 event_color: "#284841"
