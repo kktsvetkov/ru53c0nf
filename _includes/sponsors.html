@@ -1,0 +1,10 @@
+<h2 style="margin: 0 50px 30px; text-align: center; border-bottom: 1px solid #000">{{ sponsor_title }}</h2>
+
+<section style="text-align: center; margin: 0 50px 100px 50px;">
+{% for sponsor in sponsors %}
+  <a href="{{ sponsor.url }}" title="{{ sponsor.name }}" target="_blank" style="border: none;">
+    <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
+  </a>
+  {% unless forloop.last %}<br/><br/> {% endunless %}
+{% endfor %}
+</section>
