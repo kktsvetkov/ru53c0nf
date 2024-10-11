@@ -66,20 +66,35 @@
       </div>
     </nav>
 
-    <article id="when">
-      <div class="about">
-        <p>{{ page.event_about }}
-        <p>RuseConf е безплатна техническа конференция, част от IT Турнето – пътуващи из България конференции, инициирани от група ентусиасти. Поредното издание на събитието се организира с подкрепата на Русенски университет „Ангел Кънчев“.</p>
-      </div>
-      <h2>{{ page.formatted_date }}</h2>
-      <section>
-        <div class="state">Събитието завърши</div>
-      </section>
-      <section>
-        <span class="entrance"> вход свободен</span>
-        <a class="facebook" target="_blank" href="https://www.facebook.com/events/1004261434527383/"> cъбитието във facebook</a>
-      </section>
-    </article>
+    {% if page.dates_announced %}
+	    <article id="when">
+
+	      {% if page.event_about %}
+		      <div class="about">
+		        <p>{{ page.event_about }}</p>
+		      </div>
+	      {% endif %}
+
+	      <h2>{{ page.formatted_date }}</h2>
+
+	      <section>
+		{% if page.event_finished %}
+	        	<div class="state">Събитието завърши</div>
+		{% elsif page.event_ongoing %}
+	        	<div class="state">Събитието тече в момента</div>
+		{% else %}
+			<div class="timer is-countdown" data-countdown="Sat, 12 Oct 2024 10:30:00 +0300"><span class="countdown-row countdown-show3"><span class="countdown-section"><span class="countdown-amount">14</span><span class="countdown-period">Часа</span></span><span class="countdown-section"><span class="countdown-amount">20</span><span class="countdown-period">Минути</span></span><span class="countdown-section"><span class="countdown-amount">00</span><span class="countdown-period">Секунди</span></span></span></div>
+		{% endif %}
+	      </section>
+
+	      <section>
+	        <span class="entrance"> вход свободен</span>
+		{% if page.facebook_url %}
+	        	<a class="facebook" target="_blank" href="{{ page.facebook_url }}"> cъбитието във facebook</a>
+		{% endif %}
+	      </section>
+	    </article>
+    {% endif %}
 
     <article id="venue">
       <h2>Къде?</h2>

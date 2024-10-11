@@ -11,8 +11,11 @@ event_about:
 
 dates_announced: 1
 formatted_date: 14 Септември 2024
+event_finished: 1
+event_ongoing: 0
 
 call_to_papers_url: https://nc.it-tour.bg/apps/forms/s/stGEkWntS8GT4geydtAwG5Fb
+facebook_url: https://www.facebook.com/events/1004261434527383/
 
 venue_announced: 1
 venue_name: Зала 2.101 на Русенски университет „Ангел Кънчев“
