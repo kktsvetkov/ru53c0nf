@@ -184,9 +184,24 @@
         </ol>
       </section>
     </article>
+
     <article id="sponsors">
       <h1>Спонсори</h1>
       <section>
+
+	{% if page.sponsors.gold %}
+		<h2 style="margin: 0 50px 30px; text-align: center; border-bottom: 1px solid #000">Златни</h2>
+
+		<section style="text-align: center; margin: 0 50px 100px 50px;">
+		{% for sponsor in page.sponsors.gold %}
+	          <a href="{{ sponsor.url }}" target="_blank">
+	            <img src="{{ sponsor.image }}" alt="{{ sponsor.name }}" style="border: none;">
+	          </a>
+		  {% unless forloop.last %}<br/><br/> {% endunless %}
+		{% endfor %}
+	        </section>
+	{% endif %}
+
         <h2 style="margin: 0 50px 30px; text-align: center; border-bottom: 1px solid #000">Златни</h2>
         <section style="text-align: center; margin: 0 50px 100px 50px;">
           <a href="https://business.1forfit.com/" target="_blank" style="border: none;">

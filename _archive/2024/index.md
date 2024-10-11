@@ -107,6 +107,19 @@ speakers:
 
 show_sponsor_embed: 1
 sponsor_embed: some sponsor markdown
+sponsors:
+  gold:
+    - name: 1ForFit
+      url: https://business.1forfit.com/
+      image: assets/sponsors/1forfit/2024.png
+  silver:
+  media:
+  - name: Hack Bulgaria
+    url: https://www.hackbulgaria.com/
+    image: assets/sponsors/hackbulgaria/2024.png
+  - name: Dev.bg
+    url: https://dev.bg/ruse/
+    image: assets/sponsors/devbg/ruse.png
 
 # show_feedback_form: 0
 # show_photo_gallery: 0
