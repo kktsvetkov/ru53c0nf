@@ -96,18 +96,24 @@
 	    </article>
     {% endif %}
 
-    <article id="venue">
-      <h2>Къде?</h2>
-      <div class="map">
-        <iframe height="500" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=25.967790484428406%2C43.85256793116109%2C25.975606441497803%2C43.85754637394966&amp;layer=mapnik&amp;marker=43.85505720450864%2C25.971698462963104" width="100%"></iframe>
-        <a target="blank" class="overlay" href="https://www.openstreetmap.org/export/embed.html?bbox=25.967790484428406%2C43.85256793116109%2C25.975606441497803%2C43.85754637394966&amp;layer=mapnik&amp;marker=43.85505720450864%2C25.971698462963104"></a>
-      </div>
-      <section>
-        <a target="_blank" href="">Зала 2.101 на Русенски университет „Ангел Кънчев“</a>
-        <address></address>
-        <address></address>
-      </section>
-    </article>
+    {% if page.venue_announced %}
+	    <article id="venue">
+	      <h2>Къде?</h2>
+
+	      <div class="map">
+	        <iframe height="500" scrolling="no" src="{{ page.venue_map_embedded_url }}" width="100%"></iframe>
+	        <a target="blank" class="overlay" href="{{ page.venue_map_url }}"></a>
+	      </div>
+
+	      <section>
+	        <a target="_blank" href="{{ page.venue_site_url }}">{{ page.venue_name }}</a>
+	        <address>{{ page.venue_address }}</address>
+	        <address>{{ page.venue_notes }}</address>
+	      </section>
+
+	    </article>
+    {% endif %}
+
     <article id="schedule">
       <h1>Програма</h1>
       <section>

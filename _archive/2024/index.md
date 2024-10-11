@@ -19,10 +19,10 @@ facebook_url: https://www.facebook.com/events/1004261434527383/
 
 venue_announced: 1
 venue_name: Зала 2.101 на Русенски университет „Ангел Кънчев“
-venue_site_url:
+venue_site_url: https://www.uni-ruse.bg/
 venue_address:
-venue_map_url:
-venue_map_embedded_url:
+venue_map_url: https://www.openstreetmap.org/export/embed.html?bbox=25.967790484428406%2C43.85256793116109%2C25.975606441497803%2C43.85754637394966&amp;layer=mapnik&amp;marker=43.85505720450864%2C25.971698462963104
+venue_map_embedded_url: https://www.openstreetmap.org/export/embed.html?bbox=25.967790484428406%2C43.85256793116109%2C25.975606441497803%2C43.85754637394966&amp;layer=mapnik&amp;marker=43.85505720450864%2C25.971698462963104
 venue_notes:
 
 after_party_announced: 1
