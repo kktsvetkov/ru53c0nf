@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /archive/2023
 
 event: "2023"
 event_color: "#CD3744"

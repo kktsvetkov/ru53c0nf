@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /archive/2019
 
 event: "2019"
 

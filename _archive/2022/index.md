@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /archive/2022
 
 event: "2022"
 

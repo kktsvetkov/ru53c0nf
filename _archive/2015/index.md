@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /archive/2015
 
 event: "2015"
 
