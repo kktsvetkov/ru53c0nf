@@ -131,7 +131,7 @@
 				class="speaker">{{ speaker.name }}</a>{% unless forloop.last %}, {% endunless %}
 		  {% endfor %}
 
-		  {% if session.video_url? || session.slides_url? %}
+		  {% if session.video_url? or session.slides_url? %}
 		  	<span class="links">
 				{% if session.video_url %}
 					<a target="_blank" href="{{ session.video_url }}" class="video">видео</a>
