@@ -52,7 +52,7 @@
 	  	<a href="#call-for-papers">Програма</a>
 	  {% endif %}
 
-	  {% if page.show_sponsor_embed %}
+	  {% if page.sponsors_announced %}
 	  	<a href="#sponsors">Спонсори</a>
 	  {% endif %}
 
@@ -118,7 +118,7 @@
 	    </article>
     {% endif %}
 
-    {% if page.call_to_papers_url %}
+    {% if page.call_to_papers_url and !page.sessions_announced %}
     <article id="call-for-papers">
       <h1>Програма</h1>
       <section>
@@ -129,10 +129,34 @@
     </article>
     {% endif %}
 
+    {% if page.sessions_announced %}
     <article id="schedule">
       <h1>Програма</h1>
       <section>
         <ol>
+	{% for session in page.sessions %}
+		<li>
+		  <time>{{ session.start_at }}</time>
+		  <strong>{{ session.title }}</strong>
+
+		  {% for speaker in session.speakers %}
+		  	<a href="#speaker-{{ speaker.id }}"
+				class="speaker">{{ speaker.name }}</a>{% unless forloop.last %}, {% endunless %}
+		  {% endfor %}
+
+		  {% if session.video_url? || session.slides_url? %}
+		  	<span class="links">
+				{% if session.video_url %}
+					<a target="_blank" href="{{ session.video_url }}" class="video">видео</a>
+				{% endif %}
+
+				{% if session.slides_url %}
+					<a target="_blank" href="{{ session.slides_url }}" class="slides">презентация</a>
+				{% endif %}
+			</span>
+		  {% endif %}
+		</li>
+	{% endfor %}
           <li>
             <time>10:30</time>
             <strong>Кафе</strong>
@@ -199,7 +223,9 @@
         </ol>
       </section>
     </article>
+    {% endif %}
 
+    {% if page.sponsors_announced %}
     <article id="sponsors">
       <h1>Спонсори</h1>
       <section>
@@ -221,23 +247,29 @@
 	{% endif %}
       </section>
     </article>
+    {% endif %}
 
+	{% if page.speakers_announced %}
 	<article id="speakers">
-	  <h1>Лектори</h1>
-	  {% for speaker in page.speakers %}
-	  <section id="speaker-{{ speaker.id }}">
-	    <a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker.id }}">
-	      <img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
-	    </a>
-	    <h3>
-	      <a target="_blank" href="https://it-tour.bg/speakers/{{ speaker.id }}">{{ speaker.name }}</a>
-	    </h3>
-	    <div class="content">
-	      <p>{{ speaker.description }}</p>
-	    </div>
-	  </section>
-	  {% endfor %}
+		<h1>Лектори</h1>
+
+		{% for speaker in page.speakers %}
+		<section id="speaker-{{ speaker.id }}">
+			<a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker.id }}">
+			<img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
+			</a>
+
+			<h3>
+			<a target="_blank" href="https://it-tour.bg/speakers/{{ speaker.id }}">{{ speaker.name }}</a>
+			</h3>
+
+			<div class="content">
+			<p>{{ speaker.description }}</p>
+			</div>
+		</section>
+		{% endfor %}
 	</article>
+	{% endif %}
 
     <article id="subscribe">
       <h1>Записвания</h1>

@@ -34,6 +34,68 @@ after_party_venue_notes:
 
 sessions_announced: 1
 sessions:
+  - start_at: "10:30"
+    name: Кафе
+
+  - start_at: "10:50"
+    name: Откриване
+
+  - start_at: "11:00"
+    name: Essential Modern C++
+    speakers:
+      - id: "185"
+        name: Благовест Буюклиев
+
+  - start_at: "11:50"
+    name: Legacy code - какво представлява и как да се справим с него
+    speakers:
+      - id: "198"
+        name: Александра Митева
+
+  - start_at: "12:40"
+    name: "Code Reviews + Pull Requests: Защо, Кога и Как?"
+    speakers:
+      - id: "199"
+        name: Калоян Цветков
+
+  - start_at: "13:20"
+    name: Обяд
+
+  - start_at: "14:30"
+    name: "The World of PWA: Native Features Powered by Web APIs"
+    speakers:
+      - id: "200"
+        name: Стефан Неделчев
+
+  - start_at: "15:20"
+    name: "Уеб разработка по габровски: Максимум резултат с нулев бюджет"
+    speakers:
+      - id: "63"
+        name: Любомир Филипов
+
+  - start_at: "16:00"
+    name: Почивка
+
+  - start_at: "16:20"
+    name: Къде да се интегрира първо GenAI?
+    speakers:
+      - id: "201"
+        name: Александър Йорданов
+
+  - start_at: "17:10"
+    name: Как да изгасим/светнем лампите на съседа
+    speakers:
+      - id: "205"
+        name: Йордан Йорданов
+
+  - start_at: "18:00"
+    name: Lightning talks
+
+  - start_at: "18:30"
+    name: Закриване
+
+  - start_at: "20:00"
+    name: Афтърпарти
 
 speakers_announced: 1
 speakers:
@@ -105,8 +167,7 @@ speakers:
     description: Студент КСТ, 3 курс в РУ. Софтуерната разработка му е страст
       още от 7 клас, а хардуера отпреди това. Обича всичко, свързано с технологиите.
 
-show_sponsor_embed: 1
-sponsor_embed: some sponsor markdown
+sponsors_announced: 1
 sponsors:
   gold:
     - name: 1ForFit
