@@ -193,17 +193,12 @@
 		<section id="speaker-{{ speaker_id }}">
 
 			{% for speaker_data in site.data.speakers %}
-
-			{{ speaker_data[0] }}
-
 			{% assign speaker = speaker_data[1] %}
-
-			<pre>speaker_id={{ speaker_id }}, speaker.id={{ speaker.id }}</pre>
 
 				{% if speaker.id == speaker_id %}
 
 					<a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker_id }}">
-					<img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
+					<img src="assets/speakers/{{ speaker_id }}.jpg" alt="{{ speaker.name }}" />
 					</a>
 
 					<h3>
@@ -215,38 +210,10 @@
 					</div>
 				{% endif %}
 			{% endfor %}
-
 		</section>
-
-		<!-- <section id="speaker-{{ speaker.id }}">
-			<a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker.id }}">
-			<img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
-			</a>
-
-			<h3>
-			<a target="_blank" href="https://it-tour.bg/speakers/{{ speaker.id }}">{{ speaker.name }}</a>
-			</h3>
-
-			<div class="content">
-			<p>{{ speaker.description }}</p>
-			</div>
-		</section> -->
 		{% endfor %}
 	</article>
 	{% endif %}
-
-    <article id="subscribe">
-      <h1>Записвания</h1>
-      <form novalidate="novalidate" class="simple_form new_subscriber" id="new_subscriber" action="/subscribers" accept-charset="UTF-8" method="post">
-        <input name="utf8" type="hidden" value="&#x2713;" />
-        <input type="hidden" name="authenticity_token" value="VKQyLv/e6zFB15rIFHZld6pHORnxRYsJ72do5MwQfPFeRlN5SVbL9UzM5Kr4XvtYfUvypIA0t8QawyB9vlKktQ==" />
-        <div class="input email optional subscriber_email">
-          <label class="email optional control-label" for="subscriber_email">Aко искате да сте едни от първите уведомени за новини свързани с IT Tour, моля оставете email за контакт.</label>
-          <input class="string email optional" type="email" name="subscriber[email]" id="subscriber_email" />
-        </div>
-        <input type="submit" name="commit" value="Добави" class="btn" />
-      </form>
-    </article>
 
     {% include archive.html %}
 

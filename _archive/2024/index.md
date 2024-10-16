@@ -8,15 +8,16 @@ event_about:
   конференции, инициирани от група ентусиасти. Поредното издание на събитието се организира
   с подкрепата на Русенски университет „Ангел Кънчев“.
 
-dates_announced: 1
+dates_announced: true
 formatted_date: 14 Септември 2024
-event_finished: 1
-event_ongoing: 0
+
+event_finished: true
+event_ongoing: false
 
 call_to_papers_url: https://nc.it-tour.bg/apps/forms/s/stGEkWntS8GT4geydtAwG5Fb
 facebook_url: https://www.facebook.com/events/1004261434527383/
 
-venue_announced: 1
+venue_announced: true
 venue_name: Зала 2.101 на Русенски университет „Ангел Кънчев“
 venue_site_url: https://www.uni-ruse.bg/
 venue_address:
@@ -107,75 +108,6 @@ speakers:
   - alex_yordanov
   - yordan_yordanov
 
-# speakers:
-#   - name: Благовест Буюклиев
-#     id: 185
-#     photo_url: assets/speakers/blagovest_bujukliev.jpg
-#     description: Занимавам се с програмиране на приложения и системи от повече
-#       от 20 години и имам широк опит с най-различни технологични стекове и
-#       предимно с езици като C, Objective-C, Python и Perl. Топ потребител от Русе
-#       в сайта stackoverflow.
-#
-#   - name: Александра Митева
-#     id: 198
-#     photo_url: assets/speakers/aleksandra_miteva.jpg
-#     description: Завърших МГ "Баба Тонка" и в момента съм студент във втори
-#       курс в Русенския университет със специалност Компютърни системи и
-#       технологии. Занимавам се с програмиране от 6 години, като през последната
-#       година работя като front-end програмист в 1ForFit.
-#
-#   - name: Калоян Цветков
-#     id: 199
-#     photo_url: assets/speakers/kaloyan_tsvetkov.jpg
-#     description: Калоян Цветков е работил през последните две десетилетия в една
-#       от най-добрите компании за електронна търговия – Upshot Commerce (преди
-#       Make-A-Store Inc, сега част от Mi9Retail), развивайки следващото поколение
-#       платформи за онлайн продажби от най-висок клас. Калоян е лектор, спонсор и
-#       организатор на много семинари и събития в град Русе, посветени на
-#       информационните технологии и предприемачеството. Той организира първите
-#       срещи на ИТ общността в Русе, на които се обсъждат идеи като формирането
-#       на сдружение или споделено работно място в града. Калоян е един от
-#       основателите на Startup Factory, и е участвал в много от проектите и идеите на сдружението.
-#
-#   - name: Стефан Неделчев
-#     id: 200
-#     photo_url: assets/speakers/stefan_nedelchev.jpg
-#     description: Аз съм софтуерен инженер с вече 10г. опит в сферата, като
-#       последната половина от това приключение е съсредоточена във Front-end
-#       разработка на уеб и мобилни приложения. Силно ме вълнуват новостите в
-#       това направление и съм върл пропагандатор на адаптирането на PWA
-#       технологии и използването на пълния потенциал на модерните браузъри.
-#
-#   - name: Любомир Филипов
-#     id: 63
-#     photo_url: assets/speakers/lyubomir_filipov.jpg
-#     description: Любомир Филипов e IT специалист с опит над 15г. Той е Group
-#       Architect и Deputy Program Manager на програма "Polaris", която е част
-#       от международната софтуерна компания Jakala. Разработвал е различни
-#       софтуерни решения за агенции от Австралия, Германия, САЩ и Нова Зеландия.
-#       Той е лектор на международни конференции и преподавател по дисциплините
-#       PHP и Шаблони за софтуерен дизайн към ВТУ „Св. св. Кирил и Методий“. През
-#       последните 10 години активно организира турнири, хакатони, конференции,
-#       свързани с компютърните науки и е сертифициран възпитаник на Harvard
-#       Business School online, като специализира в Leadership and Management.
-#
-#   - name: Александър Йорданов
-#     id: 201
-#     photo_url: assets/speakers/alex_yordanov.jpg
-#     description: "Александър е част от Data Integration Practice към Адастра -
-#       глобална IT компания, базирана в Канада с развойни центрове в
-#       три континента – Северна Америка, Европа и Азия. Компанията е сред
-#       световните лидери в областта на: управление и анализ на данни; тяхната
-#       интеграция, трансформация и визуализация; DWH и Data Lake решения, както
-#       и консултантски услуги по изграждането и имплементирането на специфични
-#       облачни архитектури и решения в AWS, GCP и Azure."
-#
-#   - name: Йордан Йорданов
-#     id: 205
-#     photo_url: assets/speakers/yordan_yordanov.jpg
-#     description: Студент КСТ, 3 курс в РУ. Софтуерната разработка му е страст
-#       още от 7 клас, а хардуера отпреди това. Обича всичко, свързано с технологиите.
-
 sponsors_announced: 1
 sponsors:
   gold:
@@ -191,10 +123,6 @@ sponsors:
   - name: Dev.bg
     url: https://dev.bg/ruse/
     image: assets/sponsors/devbg/ruse.png
-
-# show_feedback_form: 0
-# show_photo_gallery: 0
-# show_coverart: 1
 
 show_streaming: 0
 streaming_code: url to youtube live
