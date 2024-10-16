@@ -48,7 +48,7 @@
 	  	<a href="#schedule">Програма</a>
 	  {% endif %}
 
-	  {% if page.call_to_papers_url and !page.sessions_announced %}
+	  {% if page.call_to_papers_url and not page.sessions_announced %}
 	  	<a href="#call-for-papers">Програма</a>
 	  {% endif %}
 
@@ -118,7 +118,7 @@
 	    </article>
     {% endif %}
 
-    {% if page.call_to_papers_url and !page.sessions_announced %}
+    {% if page.call_to_papers_url and not page.sessions_announced %}
     <article id="call-for-papers">
       <h1>Програма</h1>
       <section>
@@ -157,69 +157,6 @@
 		  {% endif %}
 		</li>
 	{% endfor %}
-          <li>
-            <time>10:30</time>
-            <strong>Кафе</strong>
-          </li>
-          <li>
-            <time>10:50</time>
-            <strong>Откриване</strong>
-          </li>
-          <li>
-            <time>11:00</time>
-            <strong>Essential Modern C++</strong>
-            <a class="speaker" href="#speaker-185">Благовест Буюклиев</a>
-          </li>
-          <li>
-            <time>11:50</time>
-            <strong>Legacy code - какво представлява и как да се справим с него</strong>
-            <a class="speaker" href="#speaker-198">Александра Митева</a>
-          </li>
-          <li>
-            <time>12:40</time>
-            <strong>Code Reviews + Pull Requests: Защо, Кога и Как?</strong>
-            <a class="speaker" href="#speaker-199">Калоян Цветков</a>
-          </li>
-          <li>
-            <time>13:20</time>
-            <strong>Обяд</strong>
-          </li>
-          <li>
-            <time>14:30</time>
-            <strong>The World of PWA: Native Features Powered by Web APIs</strong>
-            <a class="speaker" href="#speaker-200">Стефан Неделчев</a>
-          </li>
-          <li>
-            <time>15:20</time>
-            <strong>Уеб разработка по габровски: Максимум резултат с нулев бюджет</strong>
-            <a class="speaker" href="#speaker-63">Любомир Филипов</a>
-          </li>
-          <li>
-            <time>16:00</time>
-            <strong>Почивка</strong>
-          </li>
-          <li>
-            <time>16:20</time>
-            <strong>Къде да се интегрира първо GenAI?</strong>
-            <a class="speaker" href="#speaker-201">Александър Йорданов</a>
-          </li>
-          <li>
-            <time>17:10</time>
-            <strong>Как да изгасим/светнем лампите на съседа</strong>
-            <a class="speaker" href="#speaker-205">Йордан Йорданов</a>
-          </li>
-          <li>
-            <time>18:00</time>
-            <strong>Lightning talks</strong>
-          </li>
-          <li>
-            <time>18:30</time>
-            <strong>Закриване</strong>
-          </li>
-          <li>
-            <time>20:00</time>
-            <strong>Афтърпарти</strong>
-          </li>
         </ol>
       </section>
     </article>
@@ -253,8 +190,29 @@
 	<article id="speakers">
 		<h1>Лектори</h1>
 
-		{% for speaker in page.speakers %}
-		<section id="speaker-{{ speaker.id }}">
+		{% for speaker_id in page.speakers %}
+		<section id="speaker-{{ speaker_id }}">
+
+			{% for speaker in site.data.speakers %}
+				{% if speaker.id == speaker_id %}
+
+					<a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker_id }}">
+					<img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
+					</a>
+
+					<h3>
+					<a target="_blank" href="https://it-tour.bg/speakers/{{ speaker_id }}">{{ speaker.name }}</a>
+					</h3>
+
+					<div class="content">
+					<p>{{ speaker.description }}</p>
+					</div>
+				{% endif %}
+			{% endfor %}
+
+		</section>
+
+		<!-- <section id="speaker-{{ speaker.id }}">
 			<a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker.id }}">
 			<img src="{{ speaker.photo_url }}" alt="{{ speaker.name }}" />
 			</a>
@@ -266,7 +224,7 @@
 			<div class="content">
 			<p>{{ speaker.description }}</p>
 			</div>
-		</section>
+		</section> -->
 		{% endfor %}
 	</article>
 	{% endif %}
