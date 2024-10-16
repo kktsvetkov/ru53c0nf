@@ -192,7 +192,11 @@
 		{% for speaker_id in page.speakers %}
 		<section id="speaker-{{ speaker_id }}">
 
-			{% for speaker in site.data.speakers %}
+			{% for speaker_data in site.data.speakers %}
+
+			{{ speaker_data[0] }}
+
+			{% assign speaker = speaker_data[1] %}
 
 			<pre>speaker_id={{ speaker_id }}, speaker.id={{ speaker.id }}</pre>
 
