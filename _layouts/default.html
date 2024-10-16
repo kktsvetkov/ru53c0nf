@@ -215,6 +215,24 @@
 	</article>
 	{% endif %}
 
+	{% if page.after_party_announced %}
+    	    <article id="after-party">
+    	      <h2>Афтър парти</h2>
+
+    	      <div class="map">
+    	        <iframe height="500" scrolling="no" src="{{ page.after_party_venue_map_embedded_url }}" width="100%"></iframe>
+    	        <a target="blank" class="overlay" href="{{ page.after_party_venue_map_url }}"></a>
+    	      </div>
+
+    	      <section>
+    	        <a target="_blank" href="{{ page.after_party_venue_site_url }}">{{ page.after_party_venue_name }}</a>
+    	        <address>{{ page.after_party_venue_address }}</address>
+    	        <address>{{ page.after_party_venue_notes }}</address>
+    	      </section>
+
+    	    </article>
+        {% endif %}
+
     {% include archive.html %}
 
     <article id="more">
