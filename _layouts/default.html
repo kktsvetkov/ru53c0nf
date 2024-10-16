@@ -48,7 +48,7 @@
 	  	<a href="#schedule">Програма</a>
 	  {% endif %}
 
-	  {% if page.call_to_papers_url and not page.sessions_announced %}
+	  {% if page.call_to_papers_url and !page.sessions_announced? %}
 	  	<a href="#call-for-papers">Програма</a>
 	  {% endif %}
 
@@ -118,7 +118,7 @@
 	    </article>
     {% endif %}
 
-    {% if page.call_to_papers_url and not page.sessions_announced %}
+    {% if page.call_to_papers_url and !page.sessions_announced? %}
     <article id="call-for-papers">
       <h1>Програма</h1>
       <section>

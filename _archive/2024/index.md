@@ -24,7 +24,7 @@ venue_map_url: https://www.openstreetmap.org/export/embed.html?bbox=25.967790484
 venue_map_embedded_url: https://www.openstreetmap.org/export/embed.html?bbox=25.967790484428406%2C43.85256793116109%2C25.975606441497803%2C43.85754637394966&amp;layer=mapnik&amp;marker=43.85505720450864%2C25.971698462963104
 venue_notes:
 
-after_party_announced: 1
+after_party_announced: true
 after_party_venue_name: Ресторант "Българче"
 after_party_venue_site_url:
 after_party_venue_address: площад "Възрожденски" 2 (до Пантеона)
@@ -32,7 +32,7 @@ after_party_venue_map_url:
 after_party_venue_map_embedded_url:
 after_party_venue_notes:
 
-sessions_announced: 1
+sessions_announced: true
 sessions:
   - start_at: "10:30"
     title: Кафе
