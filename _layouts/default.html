@@ -46,9 +46,7 @@
 
 	  {% if page.sessions_announced %}
 	  	<a href="#schedule">Програма</a>
-	  {% endif %}
-
-	  {% if page.call_to_papers_url and !page.sessions_announced? %}
+	  {% elsif page.call_to_papers_url %}
 	  	<a href="#call-for-papers">Програма</a>
 	  {% endif %}
 
@@ -118,17 +116,6 @@
 	    </article>
     {% endif %}
 
-    {% if page.call_to_papers_url and !page.sessions_announced? %}
-    <article id="call-for-papers">
-      <h1>Програма</h1>
-      <section>
-	<p>Ако искате да сте лектор на събитието, изпратете ни предложението си за презентация и ще се свържем с вас.
-		<a target="_blank" href="{{ page.call_to_papers_url }}" class="link">Предложи лекция</a>
-	</p>
-      </section>
-    </article>
-    {% endif %}
-
     {% if page.sessions_announced %}
     <article id="schedule">
       <h1>Програма</h1>
@@ -160,6 +147,18 @@
         </ol>
       </section>
     </article>
+
+    {% elsif page.call_to_papers_url %}
+
+    <article id="call-for-papers">
+      <h1>Програма</h1>
+      <section>
+	<p>Ако искате да сте лектор на събитието, изпратете ни предложението си за презентация и ще се свържем с вас.
+		<a target="_blank" href="{{ page.call_to_papers_url }}" class="link">Предложи лекция</a>
+	</p>
+      </section>
+    </article>
+
     {% endif %}
 
     {% if page.sponsors_announced %}
