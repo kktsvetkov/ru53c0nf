@@ -35,67 +35,67 @@ after_party_venue_notes:
 sessions_announced: 1
 sessions:
   - start_at: "10:30"
-    name: Кафе
+    title: Кафе
 
   - start_at: "10:50"
-    name: Откриване
+    title: Откриване
 
   - start_at: "11:00"
-    name: Essential Modern C++
+    title: Essential Modern C++
     speakers:
       - id: "185"
         name: Благовест Буюклиев
 
   - start_at: "11:50"
-    name: Legacy code - какво представлява и как да се справим с него
+    title: Legacy code - какво представлява и как да се справим с него
     speakers:
       - id: "198"
         name: Александра Митева
 
   - start_at: "12:40"
-    name: "Code Reviews + Pull Requests: Защо, Кога и Как?"
+    title: "Code Reviews + Pull Requests: Защо, Кога и Как?"
     speakers:
       - id: "199"
         name: Калоян Цветков
 
   - start_at: "13:20"
-    name: Обяд
+    title: Обяд
 
   - start_at: "14:30"
-    name: "The World of PWA: Native Features Powered by Web APIs"
+    title: "The World of PWA: Native Features Powered by Web APIs"
     speakers:
       - id: "200"
         name: Стефан Неделчев
 
   - start_at: "15:20"
-    name: "Уеб разработка по габровски: Максимум резултат с нулев бюджет"
+    title: "Уеб разработка по габровски: Максимум резултат с нулев бюджет"
     speakers:
       - id: "63"
         name: Любомир Филипов
 
   - start_at: "16:00"
-    name: Почивка
+    title: Почивка
 
   - start_at: "16:20"
-    name: Къде да се интегрира първо GenAI?
+    title: Къде да се интегрира първо GenAI?
     speakers:
       - id: "201"
         name: Александър Йорданов
 
   - start_at: "17:10"
-    name: Как да изгасим/светнем лампите на съседа
+    title: Как да изгасим/светнем лампите на съседа
     speakers:
       - id: "205"
         name: Йордан Йорданов
 
   - start_at: "18:00"
-    name: Lightning talks
+    title: Lightning talks
 
   - start_at: "18:30"
-    name: Закриване
+    title: Закриване
 
   - start_at: "20:00"
-    name: Афтърпарти
+    title: Афтърпарти
 
 speakers_announced: 1
 speakers:
