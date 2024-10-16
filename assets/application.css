@@ -672,6 +672,12 @@ form input[type="submit"]:active{
 #schedule ol li:nth-child(even){
     background:#e0e0e0
 }
+
+#sponsors section a > img
+{
+	max-width: 595px;
+}
+
 #speakers .avatar{
     float:left;
     margin-right:25px

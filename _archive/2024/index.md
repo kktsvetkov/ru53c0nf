@@ -33,6 +33,7 @@ after_party_venue_map_embedded_url:
 after_party_venue_notes:
 
 sessions_announced: 1
+sessions:
 
 speakers_announced: 1
 speakers:
@@ -112,6 +113,7 @@ sponsors:
       url: https://business.1forfit.com/
       image: assets/sponsors/1forfit/2024.png
   silver:
+  partners:
   media:
   - name: Hack Bulgaria
     url: https://www.hackbulgaria.com/

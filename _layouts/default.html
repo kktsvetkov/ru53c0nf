@@ -123,7 +123,7 @@
       <h1>Програма</h1>
       <section>
 	<p>Ако искате да сте лектор на събитието, изпратете ни предложението си за презентация и ще се свържем с вас.
-		<a target="_blank" href="{{ page.call_to_papers_url }}">Предложи лекция</a>
+		<a target="_blank" href="{{ page.call_to_papers_url }}" class="link">Предложи лекция</a>
 	</p>
       </section>
     </article>
@@ -212,21 +212,13 @@
 		{% include sponsors.html sponsors=page.sponsors.silver sponsor_title="Сребърни" %}
 	{% endif %}
 
+	{% if page.sponsors.partners %}
+		{% include sponsors.html sponsors=page.sponsors.partners sponsor_title="Партньори" %}
+	{% endif %}
+
 	{% if page.sponsors.media %}
 		{% include sponsors.html sponsors=page.sponsors.media sponsor_title="С медийната подкрепа на" %}
 	{% endif %}
-
-        <h2 style="margin: 0 50px 30px; font-size:2.5em; text-align: center; border-bottom: 1px solid #000">С медийната подкрепа на</h2>
-        <section style="text-align: center; margin: 0 50px 50px 50px;">
-          <a href="https://www.hackbulgaria.com/" target="_blank" style="border: none">
-            <img src="https://varnaconf.com/system/uploads/sponsors/hackbulgaria.png" alt="Hack Bulgaria" width="100%">
-          </a>
-          <br>
-          <br>
-          <a href="https://dev.bg/varna/" target="_blank" style="border: none">
-            <img src="https://varnaconf.com/system/uploads/sponsors/devbg-varna.png" alt="Dev.bg" width="100%">
-          </a>
-        </section>
       </section>
     </article>
 
