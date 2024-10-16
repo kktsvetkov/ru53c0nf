@@ -193,6 +193,9 @@
 		<section id="speaker-{{ speaker_id }}">
 
 			{% for speaker in site.data.speakers %}
+
+			<pre>speaker_id={{ speaker_id }}, speaker.id={{ speaker.id }}</pre>
+
 				{% if speaker.id == speaker_id %}
 
 					<a target="_blank" class="avatar" href="https://it-tour.bg/speakers/{{ speaker_id }}">
